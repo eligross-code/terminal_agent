@@ -4,7 +4,7 @@ import time
 import mlx.core as mx
 from mlx_lm import load, stream_generate
 
-
+### this is the custom model I used. Will provide a link later on.
 MODEL_PATH = "/Users/eligross/models/Qwen3.5-4B-merged-mlx-4bit"
 
 model = None

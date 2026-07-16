@@ -109,3 +109,7 @@ class AgentRuntime:
 
     def run(self, user_message, computer_context=""):
         return self.loop(user_message, computer_context)
+
+
+    def get_total(self):
+        return use_model.local_state.get("total_tokens_input", 0) + use_model.local_state.get("total_tokens_generated", 0)
